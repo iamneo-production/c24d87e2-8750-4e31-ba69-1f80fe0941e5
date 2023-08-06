@@ -6,6 +6,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 import com.example.centralservice.modeldto.CentralDataDto;
 import com.example.centralservice.modeldto.ResponseDto;
@@ -67,6 +68,10 @@ public class CentralSureveillanceService {
 		responseDto.setDiseaseName(notifyData);
 		return responseDto;
 
+	}
+
+	public List<CentralData> getAllDisease(){
+		return centralRepo.findAll();
 	}
 
 }
