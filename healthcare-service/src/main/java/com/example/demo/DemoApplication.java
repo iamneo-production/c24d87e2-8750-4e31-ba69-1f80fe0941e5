@@ -1,4 +1,4 @@
-package com.analytics.analytics;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class AnalyticsApplication {
+public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AnalyticsApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 }
