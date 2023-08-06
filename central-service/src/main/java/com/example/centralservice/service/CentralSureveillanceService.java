@@ -1,4 +1,4 @@
-package com.example.centralservice.CentralSureveillanceService;
+package com.example.centralservice.service;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
