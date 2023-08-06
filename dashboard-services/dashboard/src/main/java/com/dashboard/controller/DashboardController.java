@@ -2,6 +2,7 @@ package com.dashboard.controller;
 
 
 import com.dashboard.dto.AnalyticsEntity;
+import com.dashboard.dto.CentralData;
 import com.dashboard.dto.ResponseMessage;
 import com.dashboard.service.DashboardService;
 
@@ -58,10 +59,10 @@ public class DashboardController {
 
         // read analytics get api and group the data.
 
-        dashboardService.publishDashboardView();
+        java.util.ArrayList<CentralData> returnvalue = dashboardService.publishDashboardView();
 
         ResponseMessage message = new ResponseMessage();
-        message.setResponseData("Success");
+        message.setResponseData(returnvalue);
 
          return new ResponseEntity<>(
             message, new HttpHeaders(), HttpStatus.CREATED);
